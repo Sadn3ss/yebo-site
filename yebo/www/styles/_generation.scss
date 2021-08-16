@@ -1,0 +1,21 @@
+@import 'helpers';
+
+.generation {
+    text-align: center;
+    padding: 11.8rem 0 14.1rem;
+    background: $color_light_gray2;
+    &__logo {
+        padding-bottom: 30px;
+    }
+    .container {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    &__title {
+        padding-bottom: 3.5rem;
+    }
+    &__subtitle {
+        line-height: 3.4rem;
+    }
+}

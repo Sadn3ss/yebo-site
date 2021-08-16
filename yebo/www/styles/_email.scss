@@ -1,0 +1,50 @@
+@import 'helpers';
+
+.email {
+    padding: 11rem 0;
+    &__logo {
+        user-select: none;
+    }
+    &__description {
+        font-size: 2.4rem;
+        color: $color_light_dark;
+        font-style: italic;
+        padding-top: 3.8rem;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3.8rem;
+    }
+    &__input {
+        border: .1rem solid #d3d7d9;
+        outline: none;
+        padding: 0 0 0 2.8rem;
+        width: 40rem;
+        height: 6.8rem;
+        font-size: 2rem;
+        font-style: italic;
+    }
+    &__btn {
+        padding: 0 4.5rem;
+        height: 7rem;
+        border: none;
+        background: #64c29e;
+        color: $color_white;
+        font-size: 2.4rem;
+        cursor: pointer;
+        margin-left: .7rem;
+        transition: .3s;
+        &:hover {
+            background: #60b896;
+        }
+    }
+    .container {
+        width: 110rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    text-align: center;
+}

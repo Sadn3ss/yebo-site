@@ -1,0 +1,45 @@
+@import 'helpers';
+
+.header {
+    background: url('../img/header/header-bg.png') no-repeat center center / cover;
+    height: 100vh;
+    .container {
+        width: 65rem;
+        margin: 0 auto;
+        padding: 3.5rem 1.5rem;
+    }
+    .logo {
+        user-select: none;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__link {
+            text-decoration: none;
+            color: $link_color;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            &:hover {
+                color: $color_dark;
+                // костыль, но пока не знаю как сделать по другому, вариант &:hover:not(::before) не работает 
+                &::before {
+                    color: $link_color;
+                }
+            }
+        }
+        &__link-point {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '.';
+                bottom: 0;
+                left: -4rem;
+                cursor: default;
+                pointer-events: none;
+            }
+        }
+    }
+}
+

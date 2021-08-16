@@ -1,0 +1,21 @@
+$link_color: #4d4959;
+$color_dark: #353738;
+$color_light_dark: #848789;
+$color_white: #fff;
+$color_light_gray: #d7d7d7;
+$color_light_gray2: #f7f7f7;
+$dot_color: #a9afb3;
+$dot_color_hover: #d5d5d5;
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $color_dark;
+    letter-spacing: .2rem;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: $color_light_dark;
+}
